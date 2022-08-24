@@ -93,7 +93,6 @@ if __name__ == '__main__':
     data = pd.read_excel('D:\Desktop\城市连锁网络\城市连连锁网络所需公司.xlsx', 'Sheet3', header=0)['公司'].values.tolist()
     # 从中断处继续查询
     data = data[data.index('江苏兴荣髙新科技股份有限公司'):data.index('大连船舶重工集团有限公司')]  #列表并不会遍历最后一个元素
-    data01 = ['金红叶纸业集团有限公司 ']
         # 使用已经打开的浏览器进行模拟
     edgeoptions = EdgeOptions()
     edgeoptions.use_chromium = True
